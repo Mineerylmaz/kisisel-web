@@ -1,0 +1,167 @@
+/* Navbar Temel Stilleri */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #0f0f0f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    border-bottom: 1px solid #222;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: none;
+    height: 60px;
+}
+
+/* Masaüstü için logo */
+.navbar-logo .logo-text {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+/* Navbar Links - Masaüstü görünümü */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+    transition: all 0.3s ease;
+    /* Geçiş efekti */
+}
+
+/* Navbar link öğeleri */
+.navbar-links li {
+    display: inline-block;
+}
+
+.navbar-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-links li a:hover {
+    color: #a855f7;
+}
+
+/* Hamburger Menü (Mobilde açılacak) */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Hamburger menüsü açıldığında navbar links */
+.navbar-links.open {
+    display: flex;
+    /* Menüyü açmak için flex kullan */
+    flex-direction: column;
+    /* Dikey hizalamak */
+    gap: 20px;
+    padding: 10px;
+    background-color: #0f0f0f;
+    width: 250px;
+    /* Menü genişliğini arttırdık */
+    position: absolute;
+    top: 60px;
+    /* Navbar'ın hemen altına yerleştir */
+    right: 0;
+    /* Sağ tarafa yerleştir */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transform: translateX(100%);
+    /* Başlangıçta sağa kaydırılmış */
+    transition: transform 0.3s ease-in-out;
+    /* Menü geçişi */
+}
+
+/* Menü açıldığında kaydırarak gelir */
+.navbar-links.open.show {
+    transform: translateX(0);
+    /* Menü açıldığında kayma */
+}
+
+/* ===================== */
+/*     Responsive       */
+/* ===================== */
+
+/* Mobilde hamburger menüsünü göstermek */
+@media (max-width: 768px) {
+    .navbar-links {
+        display: none;
+        /* Başlangıçta gizli */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        /* Hamburger menüsünü göster */
+    }
+
+    /* Mobilde sadece "Mine" görünsün */
+    .navbar-logo .logo-text {
+        display: none;
+        /* Masaüstü logosu gizli */
+    }
+
+    .navbar-logo .logo-text-mobile {
+        display: block;
+        /* Mobilde logo "Mine" görünür */
+    }
+
+    .navbar-links.open.show {
+        display: flex;
+        /* Hamburger menüsü açıldığında navbar öğelerini göster */
+        width: 100%;
+        /* Menü öğeleri sağa taşmaması için genişliği %100 yapıyoruz */
+        padding: 20px;
+        /* Daha fazla boşluk ekleyebiliriz */
+    }
+
+    /* Menü öğelerine daha fazla iç boşluk ekleyebiliriz */
+    .navbar-links li a {
+        padding: 10px 20px;
+        /* Menü öğeleri arasındaki boşluğu arttırıyoruz */
+        font-size: 18px;
+        /* Daha büyük yazı tipi */
+    }
+}
+
+/* Masaüstü için (768px ve üzeri) normal navbar */
+@media (min-width: 769px) {
+
+    /* Hamburger menüsünü gizle */
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* Menü öğeleri her zaman görünür */
+    .navbar-links {
+        display: flex;
+    }
+
+    .navbar-logo .logo-text-mobile {
+        display: none;
+        /* Mobildeki logo gizli */
+    }
+}

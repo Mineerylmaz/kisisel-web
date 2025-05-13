@@ -1,0 +1,273 @@
+.intro {
+    max-width: 600px;
+    padding-left: 60px;
+    padding-top: 60px;
+    /* Azaltıldı */
+}
+
+.intro-h1 {
+    font-size: 48px;
+    /* Eskisi 70px idi */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.intro-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.card-image {
+    width: 80px;
+    /* veya istediğin boyut */
+    margin-bottom: 10px;
+}
+
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex-direction: column;
+    position: relative;
+    width: 190px;
+    height: 254px;
+    background-color: #000;
+    display: flex;
+    justify-content: flex-start;
+
+    align-items: center;
+    /* DİKEY ORTALAMA */
+    padding-top: 40px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    /* Metin ortalansın */
+}
+
+
+.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.card p:not(.heading) {
+    font-size: 14px;
+}
+
+.card p:last-child {
+    color: #e81cff;
+    font-weight: 600;
+}
+
+.card:hover::after {
+    filter: blur(30px);
+}
+
+.card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+.timeline-item {
+    padding: 20px 40px;
+    position: relative;
+    width: 50%;
+    /* Kart genişliğini sabit tutuyoruz */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* İçeriği ortalamak için */
+    margin: 10px 0;
+}
+
+.timeline-item .content {
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    /* Dikey sıralama */
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    /* Yükseklik içerik uzunluğuna göre ayarlanır */
+    width: 100%;
+    /* Genişlik %100 olarak ayarlanır, kartın içine tam oturur */
+    box-sizing: border-box;
+    /* Padding ve border hesaplamaları genişlikte dahil edilir */
+}
+
+.timeline-item .content h2,
+.timeline-item .content p {
+    margin: 0;
+    /* Margini sıfırlıyoruz */
+    padding: 5px 0;
+    /* Yazı arasına biraz boşluk ekliyoruz */
+}
+
+.timeline-item.left,
+.timeline-item.right {
+    position: relative;
+}
+
+.timeline-item.left::before,
+.timeline-item.right::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    background-color: #40c9ff;
+    border-radius: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    /* Yuvarlakları dikeyde ortalar */
+}
+
+.timeline-item.left::before {
+    right: -10px;
+}
+
+.timeline-item.right::before {
+    left: -10px;
+}
+
+.section-heading {
+    padding: 0 60px;
+    margin-bottom: 60px;
+    opacity: 0;
+    transform: translateY(60px);
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-subtitle {
+    font-size: 32px;
+    color: #a0a0a0;
+    font-weight: 600;
+    margin: 0;
+}
+
+.section-title {
+    font-size: 64px;
+    font-weight: 800;
+    color: white;
+    margin: 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    .intro {
+
+        padding-top: 150px;
+        padding-left: 40px;
+        padding: 30px;
+
+    }
+
+    .intro-h1 {
+        font-size: 36px;
+        /* Başlık boyutunu küçültüyoruz */
+        margin-bottom: 10px;
+    }
+
+    .intro-text {
+        font-size: 16px;
+        /* Yazı boyutunu küçültüyoruz */
+    }
+
+    .cards-container {
+        justify-content: space-around;
+
+        gap: 1.5rem;
+
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin: 50px;
+
+    }
+
+    .card {
+        width: 180px;
+        /* Kart boyutunu biraz küçültüyoruz */
+        height: 230px;
+        /* Kartın yüksekliğini küçültüyoruz */
+    }
+
+    .card-image {
+        width: 70px;
+        /* Görsel boyutunu küçültüyoruz */
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .section-heading {
+        padding: 20px;
+
+        margin-bottom: 40px;
+        margin-top: 40px;
+
+    }
+
+    .section-subtitle {
+        font-size: 24px;
+        margin-bottom: 10px;
+        /* Subtitle ile başlık arasındaki boşluğu artırıyoruz */
+    }
+
+    .section-title {
+        font-size: 32px;
+        /* Başlık boyutunu mobil için küçültüyoruz */
+        margin-top: 20px;
+        /* Başlık ile üstteki boşluğu artırıyoruz */
+    }
+
+    .card {
+        padding: 30px;
+        margin: 50px;
+    }
+}

@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+section {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+span {
+  color: #a855f7;
+  /* Tailwind'in purple-500 rengi */
+}
+
+body {
+  background-image: url('/proje/public/ChatGPT\ Image\ 22\ Nis\ 2025\ 12_55_29.png');
+}
