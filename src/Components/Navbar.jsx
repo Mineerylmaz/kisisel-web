@@ -8,6 +8,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -15,18 +19,19 @@ const Navbar = () => {
                 <span className="logo-text-mobile">Mine</span>
             </div>
 
-
             <div className="hamburger-menu" onClick={toggleMenu}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
             </div>
 
-
             <ul className={`navbar-links ${isOpen ? "open show" : ""}`}>
-                <li><a href="#about">About</a></li>
-
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#about" onClick={closeMenu}>About</a>
+                </li>
+                <li>
+                    <a href="#contact" onClick={closeMenu}>Contact</a>
+                </li>
             </ul>
         </nav>
     );
