@@ -1,41 +1,69 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css"; // Timeline stilini içeri aktar
-
+import "react-vertical-timeline-component/style.min.css";
 import "./About.css";
 import web from "../assets/web.png";
 import back from "../assets/backend.png";
 import mbl from "../assets/mobile.png";
 import uni from "../assets/image.png"
 
-// Stil dosyası
+
 const styles = {
-    sectionSubText: "font-medium text-lg text-gray-500",  // Alt başlık stili
-    sectionHeadText: "text-3xl font-bold text-white",  // Başlık stili
+    sectionSubText: "font-medium text-lg text-gray-500",
+    sectionHeadText: "text-3xl font-bold text-white",
 };
 
-// Eğitim bilgileri
+
 const experiences = [
     {
-        title: "Bachelor's in Software Engineering",
-        company_name: "Bandırma 17 Eylül Üniversitesi",
-        date: "Sep 2021 - Present",
-        iconBg: "linear-gradient(135deg, #E81CFF 0%, #8A2BE2 100%)",
+        title: "Software Developer",
+        company_name: "ZeroSoft",
+        date: "Nov 2025 - Dec 2025",
+        iconBg: "linear-gradient(135deg, #FF4ECD 0%, #8A2BE2 100%)",
         points: [
-            "Focus on web development technologies",
-            "Specialized in React, ASP.NET Core",
-
+            "Designed and developed an end-to-end SaaS platform for dynamic QR code creation and real-time usage tracking.",
+            "Integrated an analytics dashboard with dynamic charts to report campaign insights and link performance.",
         ],
     },
     {
-        title: "High School Diploma",
-        company_name: "Suphi Koyucuoğlu Anadolu Lisesi",
-        date: "2017 - 2021",
+        title: "AI Research Intern",
+        company_name: "Kentkart",
+        date: "Aug 2025 - Sep 2025",
+        iconBg: "linear-gradient(135deg, #00F5A0 0%, #00D9F5 100%)",
+        points: [
+            "Conducted research on big data analysis and predictive AI models for smart transportation solutions.",
+            "Analyzed the performance of machine learning and deep learning algorithms in real-world field applications.",
+        ],
+    },
+    {
+        title: "Full-Stack Developer Intern",
+        company_name: "Kentkart",
+        date: "Jul 2025 - Aug 2025",
         iconBg: "linear-gradient(135deg, #40C9FF 0%, #007CF0 100%)",
         points: [
-            "Graduated with honors",
-            "1st place in regional math competition",
+            "Contributed to the architecture of scalable full-stack web and SaaS applications using React, Node.js, and MongoDB.",
+            "Developed authentication, role-based access control, and admin dashboard modules.",
+        ],
+    },
+    {
+        title: "Full-Stack Software Developer",
+        company_name: "BanuTech",
+        date: "Nov 2024 - Feb 2025",
+        iconBg: "linear-gradient(135deg, #F7971E 0%, #FFD200 100%)",
+        points: [
+            "Developed responsive, modern, and performance-oriented user interfaces for corporate web projects.",
+            "Worked on front-end improvements focused on usability, visual consistency, and mobile compatibility.",
+        ],
+    },
+    {
+        title: "Bachelor's Degree in Software Engineering",
+        company_name: "Bandırma Onyedi Eylül University",
+        date: "Sep 2022 - Jun 2026",
+        iconBg: "linear-gradient(135deg, #7F00FF 0%, #E100FF 100%)",
+        points: [
+            "Graduated from the Department of Software Engineering with a GPA of 3.05/4.00.",
+            "Focused on full-stack development, SaaS architectures, mobile applications, and database-driven systems.",
         ],
     },
 ];
@@ -90,7 +118,8 @@ const About = () => {
             <div className="intro">
                 <h1 className="intro-h1">Overview</h1>
                 <p className="intro-text">
-                    As a 3rd year Software Engineering student, I focus on web development technologies like React, ASP.NET Core, and C# to build modern and scalable web applications.
+                    Software Engineering graduate with a focus on full-stack development, SaaS product development, and modern web and mobile applications. Experienced in building user-centered solutions using Flutter, React, and Node.js.
+
                 </p>
             </div>
 

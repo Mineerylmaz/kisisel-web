@@ -1,8 +1,7 @@
 import { useGLTF, Html } from "@react-three/drei";
 
 export default function Model({ isMobile }) {
-    const gltf = useGLTF("/models/scene.gltf");
-
+    const gltf = useGLTF(import.meta.env.BASE_URL + 'models/scene.gltf')
     return (
         <>
             <primitive
@@ -12,7 +11,7 @@ export default function Model({ isMobile }) {
                 rotation={[-0.01, -0.2, -0.1]}
             />
 
-            {/* Ekran üstüne HTML bind ediyoruz */}
+
 
         </>
     );

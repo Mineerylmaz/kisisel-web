@@ -1,8 +1,3 @@
-/* Ana hero görünümü */
-
-
-
-/* Hero kısmı */
 .hero {
     display: flex;
     flex-direction: column;
@@ -15,7 +10,7 @@
     padding: 20px;
 }
 
-/* Hero yazısı */
+
 .hero-text {
     flex: 1;
     max-width: 600px;
@@ -42,11 +37,7 @@
     line-height: 1.6;
 }
 
-/* ==================== */
-/*     Responsive Kısım  */
-/* ==================== */
 
-/* Mobil cihazlar için */
 @media (max-width: 768px) {
     .hero {
         padding: 20px;
@@ -56,7 +47,7 @@
         font-size: 24px;
         margin-bottom: 10px;
         font-size: 32px;
-        /* Başlık boyutunu mobil için küçültüyoruz */
+
         margin-top: 20px;
     }
 
@@ -84,7 +75,7 @@
 }
 
 
-/* Model alanı */
+
 .hero-model {
     flex: 1;
     height: 70vh;
@@ -92,7 +83,7 @@
     width: 100%;
 }
 
-/* Scroll animasyon */
+
 .mouse-scroll {
     position: absolute;
     bottom: 20px;
@@ -105,7 +96,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    /* Ortalamak için */
+
 }
 
 .mouse {
@@ -138,7 +129,3 @@
         opacity: 0;
     }
 }
-
-/* ======================== */
-/*      Responsive Kısım    */
-/* ======================== */

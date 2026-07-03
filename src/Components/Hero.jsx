@@ -1,8 +1,7 @@
-// components/Hero.jsx
+
 import React from "react";
 import ModelViewer from "./ModelViewer";
-import "./Hero.css"; // stilleri bu dosyada tutacağız
-
+import "./Hero.css";
 const Hero = () => {
     return (
         <section className="hero-section">
@@ -16,7 +15,7 @@ const Hero = () => {
                 <ModelViewer />
             </div>
 
-            {/* Animasyonlu scroll göstergesi */}
+
             <a href="#about" className="mouse-scroll">
                 <div className="mouse">
                     <div className="scroller"></div>

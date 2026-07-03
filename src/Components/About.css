@@ -2,12 +2,12 @@
     max-width: 600px;
     padding-left: 60px;
     padding-top: 60px;
-    /* Azaltıldı */
+
 }
 
 .intro-h1 {
     font-size: 48px;
-    /* Eskisi 70px idi */
+
     font-weight: bold;
     margin: 0;
     line-height: 1.2;
@@ -21,7 +21,7 @@
 
 .card-image {
     width: 80px;
-    /* veya istediğin boyut */
+
     margin-bottom: 10px;
 }
 
@@ -44,14 +44,14 @@
     justify-content: flex-start;
 
     align-items: center;
-    /* DİKEY ORTALAMA */
+
     padding-top: 40px;
     gap: 12px;
     border-radius: 8px;
     cursor: pointer;
     color: white;
     text-align: center;
-    /* Metin ortalansın */
+
 }
 
 
@@ -107,11 +107,11 @@
     padding: 20px 40px;
     position: relative;
     width: 50%;
-    /* Kart genişliğini sabit tutuyoruz */
+
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* İçeriği ortalamak için */
+
     margin: 10px 0;
 }
 
@@ -122,23 +122,23 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
-    /* Dikey sıralama */
+
     justify-content: center;
     align-items: flex-start;
     height: auto;
-    /* Yükseklik içerik uzunluğuna göre ayarlanır */
+
     width: 100%;
-    /* Genişlik %100 olarak ayarlanır, kartın içine tam oturur */
+
     box-sizing: border-box;
-    /* Padding ve border hesaplamaları genişlikte dahil edilir */
+
 }
 
 .timeline-item .content h2,
 .timeline-item .content p {
     margin: 0;
-    /* Margini sıfırlıyoruz */
+
     padding: 5px 0;
-    /* Yazı arasına biraz boşluk ekliyoruz */
+
 }
 
 .timeline-item.left,
@@ -157,7 +157,7 @@
     border-radius: 50%;
     z-index: 1;
     transform: translateY(-50%);
-    /* Yuvarlakları dikeyde ortalar */
+
 }
 
 .timeline-item.left::before {
@@ -209,13 +209,13 @@
 
     .intro-h1 {
         font-size: 36px;
-        /* Başlık boyutunu küçültüyoruz */
+
         margin-bottom: 10px;
     }
 
     .intro-text {
         font-size: 16px;
-        /* Yazı boyutunu küçültüyoruz */
+
     }
 
     .cards-container {
@@ -231,14 +231,14 @@
 
     .card {
         width: 180px;
-        /* Kart boyutunu biraz küçültüyoruz */
+
         height: 230px;
-        /* Kartın yüksekliğini küçültüyoruz */
+
     }
 
     .card-image {
         width: 70px;
-        /* Görsel boyutunu küçültüyoruz */
+
     }
 
 
@@ -256,14 +256,14 @@
     .section-subtitle {
         font-size: 24px;
         margin-bottom: 10px;
-        /* Subtitle ile başlık arasındaki boşluğu artırıyoruz */
+
     }
 
     .section-title {
         font-size: 32px;
-        /* Başlık boyutunu mobil için küçültüyoruz */
+
         margin-top: 20px;
-        /* Başlık ile üstteki boşluğu artırıyoruz */
+
     }
 
     .card {
