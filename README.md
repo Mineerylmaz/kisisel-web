@@ -1,12 +1,44 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Mine Eryılmaz 3D Portfolio
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Kişisel portfoliom, modern web teknolojileri ile hazırlanmış ve 3D modeller içeren interaktif bir CV deneyimi sunar. Projede React ve Vite kullanılarak hızlı ve akıcı bir kullanıcı arayüzü sağlanmıştır. Ziyaretçiler, 3D tasarlanmış bölümlerle eğitim, deneyim ve projelerimi keşfedebilir.
 
-## Expanding the ESLint configuration
+## Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+https://mineeryilmaz.vercel.app/
+
+
+
+  
+## Özellikler
+
+🩷 3D Modeller: CV deneyimi, üç boyutlu interaktif öğeler ile zenginleştirilmiş.
+
+🍧 Hızlı ve Hafif: Vite ile optimize edilmiş, hızlı yükleme süreleri.
+
+📱 Responsive Tasarım: Mobil ve masaüstü cihazlarda sorunsuz kullanım.
+
+🌸 Modern Teknolojiler: React, Vite, Three.js ve modern CSS teknikleri kullanıldı.
+
+🪷 Projeler & Deneyim: Kendi projelerim, eğitim bilgilerim ve iş deneyimlerim kolay erişilebilir şekilde sunuluyor.
+
+🎀 Canlı Önizleme: Proje her zaman güncel ve erişilebilir
+
+## Kullanılan Teknolojiler
+
+![React](https://img.shields.io/badge/React-FFB6C1?style=flat&logo=react&logoColor=black)
+
+![JavaScript](https://img.shields.io/badge/JavaScript-FEC8D8?style=flat&logo=javascript&logoColor=black)
+
+![Styled Components](https://img.shields.io/badge/Styled--Components-FADADD?style=flat&logo=styled-components&logoColor=black)
+
+![SweetAlert2](https://img.shields.io/badge/SweetAlert2-F8C3CD?style=flat&logo=sweetalert2&logoColor=black)
+
+![Css](https://img.shields.io/badge/CSS-FFB6C1?&style=flat&logo=css3&logoColor=white)
+
+![Bootsrtap](https://img.shields.io/badge/Bootstrap-FFB6C1?style=flat&logo=bootstrap&logoColor=white)
+
+![React_Router](https://img.shields.io/badge/React_Router-FFB6C1?style=flat&logo=react-router&logoColor=white)
+
+  
